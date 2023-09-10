@@ -1,5 +1,5 @@
-body{
-  font-family: 'Space Grotesk', sans-serif;
+:root{
+  --bs-body-font-family:'Space Grotesk', sans-serif;
 }
 
 .bd-placeholder-img {
