@@ -78,3 +78,7 @@
     transform: scale(1.05);
     transition: transform 0.3s;
 }
+.custom-justify-text-left {
+  text-align: justify;
+  text-justify: inter-word;
+}

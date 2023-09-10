@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="../static/color-modes"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simon Abello Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../static/globalstyle.css" />
+        <link rel="shortcut icon" href='../static/favicon.ico'>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+        {% include "nav.html" %}
+        <main>
+            <section class="py-5 text-center container">
+                <h1>About & Contact</h1>
+                <div class="row justify-content-center">
+                    <!-- Image Column -->
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img src="../static/foto_simon.jpg" alt="Profile Image"
+                            class="rounded float-start m-1 rounded d-none d-md-block">
+                    </div>
+
+                    <!-- Text and Buttons Column -->
+                    <div class="col-md-6" style="margin-top: 2%;">
+                        <p class="custom-justify-text-left ">
+                            Colombian/Italian by roots and currently residing in
+                            the Netherlands with my family.
+                            I possess a unique blend of robust analytical
+                            capabilities, strategic insight,
+                            and a hands-on approach to execution.
+                        </p>
+                        <p class="custom-justify-text-left">
+                            In my recent role as a Senior CX Business Analyst at
+                            Rockwell Automation,
+                            I've pioneered the use of ML techniques,
+                            specifically crafting a Topic Analysis framework
+                            to decipher unstructured survey data. My MBA from
+                            the Rotterdam School of Management
+                            is more than just credentials; it's underscored by 2
+                            first place triumphs in
+                            international financial investment competitions in
+                            2021 against US and EU Top B-Schools.
+                        </p>
+                        <p class="custom-justify-text-left">
+                            Before my stint at Rockwell, I played a crucial
+                            hybrid role at Geometry Colombia,
+                            leading marketing and brand strategies across
+                            diverse regions
+                            and being a project manager for digital products.
+                        </p>
+                        <p class="custom-justify-text-left">
+                            Beyond work, I'm deeply committed to sustainability
+                            and the belief that we must
+                            care for our planet. Always eager for conversations
+                            about groundbreaking strategies,
+                            new initiatives, consulting work or just answering
+                            questions.
+                        </p>
+                        <p class="custom-justify-text-left">
+                            Don't hesitate to drop me an email.
+                        </p>
+                        <p class="custom-justify-text-left">
+                            You can find me here:
+                        </p>
+
+                        <p>
+                            <a
+                                href="mailto:abello.simon@gmail.com?subject=Hello%20Simon!"
+                                class="btn btn-dark my-2">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/simonabello"
+                                class="btn btn-dark my-2">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/abellosimon"
+                                class="btn btn-dark my-2">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        {% include "nav.html" %}
+    </body>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</html>
