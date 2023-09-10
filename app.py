@@ -7,9 +7,6 @@ app = Flask(__name__)
 def hello_world():
   return render_template('home.html')
 
-@app.route("/work")
-def work():
-  return render_template('home.html')
 
 @app.route("/resume")
 def resume():
