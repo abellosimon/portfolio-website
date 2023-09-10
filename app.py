@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-  return render_template('home.html')
+  return render_template('home.html','resume.html','about.html')
 
 #DONE: Learn to change favicon icon
 
