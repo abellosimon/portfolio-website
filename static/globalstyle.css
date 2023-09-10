@@ -73,3 +73,8 @@
   .bd-mode-toggle {
     z-index: 1500;
   }
+
+  .scale-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
