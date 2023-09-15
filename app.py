@@ -14,5 +14,9 @@ def resume():
 def about():
   return render_template('about.html')
 
+@app.route("/fci")
+def fci():
+  return render_template('CaseStudy_FCI.html')
+
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
