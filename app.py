@@ -18,5 +18,9 @@ def about():
 def fci():
   return render_template('CaseStudy_FCI.html')
 
+@app.route("/colgate")
+def colgate():
+  return render_template('CaseStudy_Colgate.html')
+
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
