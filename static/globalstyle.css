@@ -82,3 +82,74 @@
   text-align: justify;
   text-justify: inter-word;
 }
+
+.wrapper {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* Rolling word animation for desktop*/
+.inner-headings{
+  border: 0px solid #ddd;
+  height: 45px;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.inner-headings h2{
+  position:relative;
+  animation: spin_words 12s
+  ease infinite;
+}
+
+@keyframes spin_words{
+ 0%, 
+ 100%{
+  top:0;
+ }
+ 20%{
+  top:0;
+ }
+ 25%{
+  top: -50px;
+ }
+ 45%{
+  top: -50px;
+ }
+ 50%{
+  top: -100px;
+ }
+ 70%{
+  top: -100px;
+ }
+ 75%{
+  top: -140px;
+ }
+ 95%{
+  top: -140px;
+ }
+}
+
+/* Disabling animation for mobile devices */
+@media (max-width: 768px) {
+  .inner-headings{
+    border: 0px solid #ddd;
+    height: 38px;
+    line-height: 50px;
+    overflow: hidden;
+  }
+  .inner-headings h2 {
+    animation: none; /* Disables the animation */
+  }
+}
+/* Disabling animation for tablet devices */
+@media (max-width: 1024px) {
+  .inner-headings{
+    border: 0px solid #ddd;
+    height: 38px;
+    line-height: 50px;
+    overflow: hidden;
+  }
+  .inner-headings h2 {
+    animation: none; /* Disables the animation */
+  }
+}
