@@ -90,8 +90,8 @@
 /* Rolling word animation for desktop*/
 .inner-headings{
   border: 0px solid #ddd;
-  height: 45px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
   overflow: hidden;
 }
 
@@ -128,28 +128,89 @@
   top: -140px;
  }
 }
+/* Rolling word animation for Tablets */
+@media (max-width: 1023px) {
+  .inner-headings{
+    border: 0px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+  }
+  .inner-headings h2 {
+    position:relative;
+    animation: spin_words_tablet 12s
+    ease infinite; 
+  }
 
-/* Disabling animation for mobile devices */
+  @keyframes spin_words_tablet{
+    0%, 
+    100%{
+     top:0;
+    }
+    20%{
+     top:0;
+    }
+    25%{
+     top: -40px;
+    }
+    45%{
+     top: -40px;
+    }
+    50%{
+     top: -80px;
+    }
+    70%{
+     top: -80px;
+    }
+    75%{
+     top: -125px;
+    }
+    95%{
+     top: -125px;
+    }
+   }
+
+}
+/*Rolling word animation for mobile */
 @media (max-width: 768px) {
   .inner-headings{
     border: 0px solid #ddd;
-    height: 38px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     overflow: hidden;
   }
   .inner-headings h2 {
-    animation: none; /* Disables the animation */
+    position:relative;
+    animation: spin_words_mobile 12s
+    ease infinite; 
   }
-}
-/* Disabling animation for tablet devices */
-@media (max-width: 1024px) {
-  .inner-headings{
-    border: 0px solid #ddd;
-    height: 38px;
-    line-height: 50px;
-    overflow: hidden;
-  }
-  .inner-headings h2 {
-    animation: none; /* Disables the animation */
-  }
+
+  @keyframes spin_words_mobile{
+    0%, 
+    100%{
+     top:0;
+    }
+    20%{
+     top:0;
+    }
+    25%{
+     top: -40px;
+    }
+    45%{
+     top: -40px;
+    }
+    50%{
+     top: -75px;
+    }
+    70%{
+     top: -75px;
+    }
+    75%{
+     top: -115px;
+    }
+    95%{
+     top: -115px;
+    }
+   }
+
 }
