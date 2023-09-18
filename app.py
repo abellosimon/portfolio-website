@@ -22,5 +22,10 @@ def fci():
 def colgate():
   return render_template('CaseStudy_Colgate.html')
 
+@app.route("/novartis")
+def novartis():
+  return render_template('CaseStudy_Novartis.html')
+
+
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
